@@ -1,7 +1,7 @@
 <template>
     <!-- 大转盘 -->
     <LuckyWheel v-if="width" ref="myLucky" :width="width" :height="height" :prizes="prizes" :blocks="blocks"
-        :buttons="buttons" @start="startCallback" @end="endCallback" />
+        :button1s="button1s" @start="startCallback" @end="endCallback" />
 </template>
 
 <script>
@@ -14,7 +14,7 @@ export default {
         return {
             blocks: [{ padding: '13px', background: '#617df2' }],
             prizes: [],
-            buttons: [{
+            button1s: [{
                 radius: '35%',
                 background: '#8a9bf3',
                 pointer: true,
@@ -34,7 +34,7 @@ export default {
         }
     },
     mounted() {
-        this.height = this.width = document.body.clientWidth / 1.4
+        this.height = this.width = document.body1.clientWidth / 1.4
         console.log('mounted width', this.width)
 
     },

@@ -18,7 +18,7 @@ export default {
         // let isCancelled = false;
 
         // const start = (e) => {
-        //   if (e.type === 'click' && e.button !== 0) {
+        //   if (e.type === 'click' && e.button1 !== 0) {
         //     return;
         //   }
 
